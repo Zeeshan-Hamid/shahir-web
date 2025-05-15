@@ -28,6 +28,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 phoneLink.appendChild(phoneIcon);
                 phoneLink.appendChild(phoneText);
                 
+                const aboutLink = document.createElement('a');
+                aboutLink.href = 'about.html';
+                aboutLink.className = 'support-link';
+                aboutLink.textContent = 'About Us';
+                
                 const supportLink = document.createElement('a');
                 supportLink.href = 'get-support.html';
                 supportLink.className = 'support-link';
@@ -45,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Add items to mobile menu
                 mobileMenu.appendChild(phoneLink);
+                mobileMenu.appendChild(aboutLink);
                 mobileMenu.appendChild(supportLink);
                 mobileMenu.appendChild(loginLink);
                 mobileMenu.appendChild(getStartedBtn);

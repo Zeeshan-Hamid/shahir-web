@@ -423,5 +423,18 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        // Set About link as active in mobile menu
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            if (mobileMenu) {
+                const aboutLink = mobileMenu.querySelector('a[href="about.html"]');
+                if (aboutLink) {
+                    aboutLink.style.fontWeight = '700';
+                    aboutLink.style.color = '#06C167';
+                }
+            }
+        });
+    </script>
 </body>
 </html> 
