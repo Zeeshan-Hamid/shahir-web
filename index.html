@@ -61,47 +61,48 @@
                 <div class="hero-right">
                     <div class="form-container">
                         <h2>Get started</h2>
-                        <form id="signup-form" netlify>
+                        <form id="signup-form" name="merchant-signup" method="POST" data-netlify="true">
+                            <input type="hidden" name="form-name" value="merchant-signup" />
                             <div class="form-group half">
                                 <label for="first-name">First name</label>
-                                <input type="text" id="first-name" required>
+                                <input type="text" id="first-name" name="first-name" required>
                             </div>
                             <div class="form-group half">
                                 <label for="last-name">Last name</label>
-                                <input type="text" id="last-name" required>
+                                <input type="text" id="last-name" name="last-name" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" required>
+                                <input type="email" id="email" name="email" required>
                             </div>
                             <div class="form-group phone-input">
                                 <label for="phone">Mobile phone number</label>
                                 <div class="phone-container">
                                     <div class="country-select">
-                                        <select id="country-code">
+                                        <select id="country-code" name="country-code">
                                             <option value="US">US</option>
                                             <option value="CA">CA</option>
                                             <option value="MX">MX</option>
                                         </select>
                                     </div>
-                                    <input type="tel" id="phone" placeholder="+1">
+                                    <input type="tel" id="phone" name="phone" placeholder="+1">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="store-address">Store address</label>
-                                <input type="text" id="store-address" placeholder="Enter store address">
+                                <input type="text" id="store-address" name="store-address" placeholder="Enter store address">
                             </div>
                             <div class="form-group">
                                 <label for="floor-suite">Floor / Suite (Optional)</label>
-                                <input type="text" id="floor-suite">
+                                <input type="text" id="floor-suite" name="floor-suite">
                             </div>
                             <div class="form-group">
                                 <label for="store-name">Store name</label>
-                                <input type="text" id="store-name" placeholder="Sam's Pizza (123 Main Street)" required>
+                                <input type="text" id="store-name" name="store-name" placeholder="Sam's Pizza (123 Main Street)" required>
                             </div>
                             <div class="form-group">
                                 <label for="business-type">Business type</label>
-                                <select id="business-type">
+                                <select id="business-type" name="business-type">
                                     <option value="" disabled selected>Select...</option>
                                     <option value="restaurant">Restaurant</option>
                                     <option value="grocery">Grocery</option>
