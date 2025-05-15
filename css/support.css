@@ -102,6 +102,7 @@
     margin: 0 auto;
     padding: 0 5%;
     height: 48px;
+    z-index: 500;
     position: relative;
 }
 
@@ -385,6 +386,9 @@
 }
 
 @media (max-width: 768px) {
+    .categories-navbar{
+        margin-top: 20px;
+    }
     .support-navbar {
         padding: 0 16px;
     }
