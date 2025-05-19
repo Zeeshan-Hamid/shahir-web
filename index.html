@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Eats for Merchants</title>
+    <!-- Uber Move Font -->
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/uber-move-2');
+        @import url('https://fonts.cdnfonts.com/css/uber-move-text');
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <div>
+                        <h1>Uber</h1><h1 class="eats">Eats</h1>
+                    </div>
+                    <p>for Merchants</p>
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="tel:03094649399" class="phone-number">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>03094649399</span>
+                </a>
+                <a href="about.html" class="support-link">Tech Support</a>
+                <a href="get-support.html" class="support-link">Payment Inquiries</a>
+                <a href="#hero" class="login-link">Log in</a>
+                <a href="#hero" class="btn-white get-started-btn">Get started</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-left">
+                    <h1>Get support from Uber Eats to grow your business</h1>
+                    <div class="contact-info">
+                        <div class="phone-info">
+                            <i class="fas fa-phone-alt icon"></i>
+                            <a href="tel:03094649399">03094649399</a>
+                        </div>
+                        <div class="email-info">
+                            <i class="fas fa-envelope icon"></i>
+                            <a href="mailto:mario@ubermerchantssupport.com">mario@ubermerchantssupport.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="form-container">
+                        <h2>Get started</h2>
+                        <form id="signup-form" method="POST">
+                            <div class="form-group half">
+                                <label for="first-name">First name</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+                            <div class="form-group half">
+                                <label for="last-name">Last name</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group phone-input">
+                                <label for="phone">Mobile phone number</label>
+                                <div class="phone-container">
+                                    <div class="country-select">
+                                        <select id="country-code" name="country-code">
+                                            <option value="US">US</option>
+                                            <option value="CA">CA</option>
+                                            <option value="MX">MX</option>
+                                        </select>
+                                    </div>
+                                    <input type="tel" id="phone" name="phone" placeholder="+1">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="store-address">Store address</label>
+                                <input type="text" id="store-address" name="store-address" placeholder="Enter store address">
+                            </div>
+                            <div class="form-group">
+                                <label for="floor-suite">Floor / Suite (Optional)</label>
+                                <input type="text" id="floor-suite" name="floor-suite">
+                            </div>
+                            <div class="form-group">
+                                <label for="store-name">Store name</label>
+                                <input type="text" id="store-name" name="store-name" placeholder="Sam's Pizza (123 Main Street)" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="business-type">Business type</label>
+                                <select id="business-type" name="business-type">
+                                    <option value="" disabled selected>Select...</option>
+                                    <option value="restaurant">Restaurant</option>
+                                    <option value="grocery">Grocery</option>
+                                    <option value="retail">Retail</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <h2>Grow your business using the power of the Uber Eats platform</h2>
+                <p>Uber Eats is a global platform that connects businesses to millions of customers and delivery people worldwide. We empower businesses to build easy online delivery and logistics operations.</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="services-container">
+                <h2>Get Technical Support</h2>
+                <p>Whether you're looking to generate more demand or add to your delivery capabilities, partner with us using one service or a combination of services.</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="media/ls.png" alt="Uber Eats marketplace">
+                        </div>
+                        <div class="service-content">
+                            <h3>Uber Eats marketplace</h3>
+                            <p>Reach new customers by listing your business on the Uber Eats marketplace with flexible options for delivery, self-delivery, and pickup. Easily integrate your existing POS.</p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="media/rs.png" alt="Uber Direct">
+                        </div>
+                        <div class="service-content">
+                            <h3>Uber Direct</h3>
+                            <p>Offer fast and reliable local delivery through your own website, app, and phone channels by using Uber Direct, our white-label delivery-as-a-service. Connect with your existing POS or OMS, integrate with our API, or use the Uber Direct dashboard.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="stats-section">
+            <div class="stats-overlay">
+                <div class="stats-container">
+                    <h2>We're proud to work with more than 1 million merchant partners in 11,000+ cities across 6 continents*</h2>
+                    <a href="get-support.html" class="stats-button">Have a word with us</a>
+                </div>
+            </div>
+        </section>
+
+       
+        
+        <!-- Features Section (3 columns) -->
+        <section id="features" class="features-section">
+            <div class="features-container">
+                <h2>Get to know us</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <img src="media\220505_UBER_LIS_D-RS1-A_000182_VS_R3_1.png" alt="Pricing tailored to your business">
+                        </div>
+                        <h3>Pricing tailored to your business</h3>
+                        <p>Learn about our simple and transparent pricing across our services.</p>
+                        <a href="tel:03094649399" class="feature-link">Get Quote</a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <img src="media/M-CTC10_OFFICE_WORK---CAMERA_R_0567_VS_R1_4.png" alt="Marketing to expand your reach">
+                        </div>
+                        <h3>Marketing to expand your reach</h3>
+                        <p>Access a full suite of marketing tools to help grow your sales.</p>
+                        <a href="tel:03094649399" class="feature-link">Learn how they work</a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <img src="media/Marketplace_Merchant_POS_1.png" alt="Global support to answer your questions">
+                        </div>
+                        <h3>Global support to answer your questions</h3>
+                        <p>Reach our support teams around the world when you need help.</p>
+                        <a href="tel:03094649399" class="feature-link">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section (Black background with button) -->
+        <section id="cta" class="cta-section">
+            <div class="cta-container">
+                <h2>Ready to get started?</h2>
+                <a href="#signup-form" class="cta-button">Sign up</a>
+            </div>
+        </section>
+
+         <!-- Sustainability Section -->
+     <section id="sustainability" class="sustainability-section">
+        <div class="sustainability-container">
+            <div class="sustainability-image">
+                <img src="media/dude.png" alt="Merchant sustainability">
+            </div>
+            <div class="sustainability-content">
+                <h2>Building a more sustainable platform</h2>
+                <p>At Uber, we're working together with merchants and delivery people to help reduce plastic packaging waste and emissions.</p>
+                <a href="get-support.html" class="sustainability-button">See our commitments</a>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div>
+                        <h2>Uber</h2><h2 class="eats">Eats</h2>
+                    </div>
+                    <p>for Merchants</p>
+                </div>
+                <div class="footer-app-links">
+                    <a href="#" class="app-store-link">
+                        <i class="fab fa-apple"></i> App Store
+                    </a>
+                    <a href="#" class="play-store-link">
+                        <i class="fab fa-google-play"></i> Google Play
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">Uber Eats</a></li>
+                        <li><a href="#">Uber Direct</a></li>
+                        <li><a href="#">Merchant Platform</a></li>
+                        <li><a href="#">Delivery Solutions</a></li>
+                        <li><a href="#">Restaurant Manager</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Partner Success Stories</a></li>
+                        <li><a href="#">Merchant Promotions</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Contact Sales</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Statement</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-info">
+                    <div class="copyright">
+                        <p>&copy; 2025 Uber Technologies Inc.</p>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-globe"></i>
+                        <span>United States</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Thank You Modal -->
+    <div id="thank-you-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Thank You!</h2>
+                <p>Your form has been submitted successfully.</p>
+                <p>Our team of professionals will get back to you soon.</p>
+                <button id="modal-close-btn" class="btn-black">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

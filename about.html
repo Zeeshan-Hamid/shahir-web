@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Uber Eats for Merchants</title>
+    <!-- Uber Move Font -->
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/uber-move-2');
+        @import url('https://fonts.cdnfonts.com/css/uber-move-text');
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Additional styles specific to about page */
+        .about-hero-section {
+            position: relative;
+            padding: 100px 0 60px;
+            margin-top: 64px;
+            background-color: #f6f6f6;
+        }
+        
+        .about-hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+        }
+        
+        .about-hero-text {
+            flex: 1;
+            padding-right: 40px;
+        }
+        
+        .about-hero-text h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .about-hero-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        
+        .about-hero-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .about-hero-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .contact-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            border-radius: 500px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .phone-btn {
+            background-color: #000;
+            color: #fff;
+        }
+        
+        .phone-btn:hover {
+            background-color: #333;
+        }
+        
+        .email-btn {
+            background-color: #f2f2f2;
+            color: #000;
+        }
+        
+        .email-btn:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .about-section-alt {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+        
+        .about-container-alt {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5%;
+            text-align: center;
+        }
+        
+        .about-section-alt h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+        
+        .mission-values {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .mission-card {
+            flex: 1;
+            background-color: #f6f6f6;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: left;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .mission-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .mission-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .team-section {
+            padding: 80px 0;
+            background-color: #f6f6f6;
+        }
+        
+        @media (max-width: 992px) {
+            .about-hero-content {
+                flex-direction: column;
+            }
+            
+            .about-hero-text {
+                padding-right: 0;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            
+            .contact-buttons {
+                justify-content: center;
+            }
+            
+            .mission-values {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <div>
+                        <h1>Uber</h1><h1 class="eats">Eats</h1>
+                    </div>
+                    <p>for Merchants</p>
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="tel:03094649399" class="phone-number">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>03094649399</span>
+                </a>
+                <a href="get-support.html" class="support-link">Technical support</a>
+                <a href="index.html#hero" class="login-link">Log in</a>
+                <a href="index.html#hero" class="btn-white get-started-btn">Get started</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Hero Section with updated layout -->
+        <section class="about-hero-section">
+            <div class="about-hero-content">
+                <div class="about-hero-text">
+                    <h1>We're Reimagining Merchant Success</h1>
+                    <p>At Uber Eats, we're dedicated to helping restaurants and merchants thrive in an increasingly digital world. Our platform connects you with millions of customers, helping grow your business and expand your reach.</p>
+                    
+                    <div class="contact-buttons">
+                        <a href="tel:03094649399" class="contact-btn phone-btn">
+                            <i class="fas fa-phone-alt" style="margin-right: 10px;"></i> 03094649399
+                        </a>
+                        <a href="mailto:mario@ubermerchantssupport.com" class="contact-btn email-btn">
+                            <i class="fas fa-envelope" style="margin-right: 10px;"></i> Email Us
+                        </a>
+                    </div>
+                </div>
+                <div class="about-hero-image">
+                    <img src="media/Marketplace_Merchant_POS_1.png" alt="Uber Eats Merchant Platform">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Company Section with alternating layout -->
+        <section class="about-section-alt">
+            <div class="about-container-alt">
+                <h2>Our Story</h2>
+                <p>Uber Eats is a global platform that connects businesses to millions of customers and delivery people worldwide. We empower businesses to build easy online delivery and logistics operations. With over 1 million merchant partners in 11,000+ cities across 6 continents, we're dedicated to helping your business reach its full potential.</p>
+                
+                <div class="mission-values">
+                    <div class="mission-card">
+                        <h3>Our Mission</h3>
+                        <p>We're on a mission to transform the way merchants connect with customers. By providing cutting-edge technology and logistics solutions, we help businesses of all sizes expand their reach and grow their sales.</p>
+                    </div>
+                    <div class="mission-card">
+                        <h3>Our Values</h3>
+                        <p>We believe in empowering local businesses, creating economic opportunities, and building meaningful partnerships. Our platform is designed with your success in mind, providing the tools you need to thrive.</p>
+                    </div>
+                    <div class="mission-card">
+                        <h3>Our Commitment</h3>
+                        <p>We're committed to being a true partner in your growth journey. We continuously innovate our platform and services to meet your evolving needs and help you stay ahead in a competitive market.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section class="services-section">
+            <div class="services-container">
+                <h2>How We Help You Succeed</h2>
+                <p>We offer flexible solutions tailored to your business needs. Whether you're looking to generate more demand or add to your delivery capabilities, partner with us using one service or a combination of services.</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="media/UberDirect_Grocery_5.png" alt="Uber Eats marketplace">
+                        </div>
+                        <div class="service-content">
+                            <h3>Uber Eats marketplace</h3>
+                            <p>Reach new customers by listing your business on the Uber Eats marketplace with flexible options for delivery, self-delivery, and pickup. Easily integrate your existing POS.</p>
+                            <a href="tel:03094649399" class="feature-link">Call for details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="media/M-ST10_OFFICE_WORK---CAMERA_R_0015_VS_R5_3.png" alt="Uber Direct">
+                        </div>
+                        <div class="service-content">
+                            <h3>Uber Direct</h3>
+                            <p>Offer fast and reliable local delivery through your own website, app, and phone channels by using Uber Direct, our white-label delivery-as-a-service.</p>
+                            <a href="tel:03094649399" class="feature-link">Contact our team</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section with redesigned layout -->
+        <section class="team-section">
+            <div class="about-container-alt">
+                <h2>Our Team is Ready to Help</h2>
+                <p>Our dedicated team of experts is here to answer your questions and help you make the most of the Uber Eats platform. We're committed to your success and ready to provide the support you need to grow your business.</p>
+                
+                <div style="margin-top: 40px; text-align: center;">
+                    <img src="media/cytonn-photography-n95VMLxqM2I-unsplash.jpg" alt="Our Team" style="max-width: 80%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                </div>
+                
+                <div style="margin-top: 40px; text-align: center;">
+                    <a href="tel:03094649399" style="display: inline-block; padding: 15px 30px; background-color: #000; color: #fff; font-size: 18px; font-weight: 500; border-radius: 500px; text-decoration: none; margin-right: 20px;">
+                        <i class="fas fa-phone-alt" style="margin-right: 10px;"></i> Call Our Team
+                    </a>
+                    <a href="mailto:mario@ubermerchantssupport.com" style="display: inline-block; padding: 15px 30px; background-color: #f2f2f2; color: #000; font-size: 18px; font-weight: 500; border-radius: 500px; text-decoration: none;">
+                        <i class="fas fa-envelope" style="margin-right: 10px;"></i> Email Us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section with new images -->
+        <section id="features" class="features-section">
+            <div class="features-container">
+                <h2>Why Partner With Us</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <img src="media/220505_UBER_LIS_D-RS1-A_000182_VS_R3_1.png" alt="Pricing tailored to your business">
+                        </div>
+                        <h3>Pricing tailored to your business</h3>
+                        <p>Get custom pricing that fits your business model and goals.</p>
+                        <a href="tel:03094649399" class="feature-link">Call for a quote</a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <img src="media/ls.png" alt="Marketing to expand your reach">
+                        </div>
+                        <h3>Marketing to expand your reach</h3>
+                        <p>Access a full suite of marketing tools to help grow your sales.</p>
+                        <a href="tel:03094649399" class="feature-link">Discuss marketing options</a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <img src="media/rs.png" alt="Global support to answer your questions">
+                        </div>
+                        <h3>Dedicated support team</h3>
+                        <p>Get personalized assistance from our global support team whenever you need help.</p>
+                        <a href="tel:03094649399" class="feature-link">Contact support</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section id="cta" class="cta-section">
+            <div class="cta-container">
+                <h2>Ready to grow your business with Uber Eats?</h2>
+                <a href="tel:03094649399" class="cta-button">Call us now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div>
+                        <h2>Uber</h2><h2 class="eats">Eats</h2>
+                    </div>
+                    <p>for Merchants</p>
+                </div>
+                <div class="footer-app-links">
+                    <a href="#" class="app-store-link">
+                        <i class="fab fa-apple"></i> App Store
+                    </a>
+                    <a href="#" class="play-store-link">
+                        <i class="fab fa-google-play"></i> Google Play
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">Uber Eats</a></li>
+                        <li><a href="#">Uber Direct</a></li>
+                        <li><a href="#">Merchant Platform</a></li>
+                        <li><a href="#">Delivery Solutions</a></li>
+                        <li><a href="#">Restaurant Manager</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="get-support.html">Help Center</a></li>
+                        <li><a href="#">Partner Success Stories</a></li>
+                        <li><a href="#">Merchant Promotions</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="tel:03094649399">Contact Sales</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Statement</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-info">
+                    <div class="copyright">
+                        <p>&copy; 2023 Uber Technologies Inc.</p>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-globe"></i>
+                        <span>United States</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Set About link as active in mobile menu
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            if (mobileMenu) {
+                const aboutLink = mobileMenu.querySelector('a[href="about.html"]');
+                if (aboutLink) {
+                    aboutLink.style.fontWeight = '700';
+                    aboutLink.style.color = '#06C167';
+                }
+            }
+        });
+    </script>
+</body>
+</html> 
