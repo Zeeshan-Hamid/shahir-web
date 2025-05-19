@@ -5,9 +5,14 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 const path = require('path');
 
+// Debug: Log environment variables
+console.log('Environment Variables Check:');
+console.log('EMAIL_USER:', process.env.EMAIL_USER);
+console.log('RECIPIENT_EMAIL:', process.env.RECIPIENT_EMAIL);
+
 // Initialize Express app
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Debug middleware to log requests
 app.use((req, res, next) => {
@@ -24,9 +29,8 @@ app.use(express.static(path.join(__dirname, '/')));
 const requiredEnvVars = ['EMAIL_USER', 'EMAIL_PASS', 'RECIPIENT_EMAIL'];
 const missingEnvVars = requiredEnvVars.filter(env => !process.env[env]);
 
-
-
 // Create reusable transporter object using SMTP transport
+console.log('Creating email transporter with user:', process.env.EMAIL_USER);
 const transporter = nodemailer.createTransport({
   service: process.env.EMAIL_SERVICE || 'gmail', // e.g., 'gmail'
   auth: {
@@ -41,6 +45,7 @@ transporter.verify(function(error, success) {
     console.error('Email configuration error:', error);
   } else {
     console.log('Server is ready to send emails');
+    console.log('Transporter configured with email:', process.env.EMAIL_USER);
   }
 });
 
