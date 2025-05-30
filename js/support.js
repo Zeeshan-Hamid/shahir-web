@@ -17,24 +17,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Create mobile menu items
                 const homeLink = document.createElement('a');
                 homeLink.href = 'index.html';
-                homeLink.textContent = 'Home';
+                homeLink.innerHTML = '<i class="fas fa-home"></i><span>Home</span>';
                 
-                const aboutLink = document.createElement('a');
-                aboutLink.href = 'about.html';
-                aboutLink.textContent = 'About Us';
+                const techSupportLink = document.createElement('a');
+                techSupportLink.href = 'about.html';
+                techSupportLink.innerHTML = '<i class="fas fa-info-circle"></i><span>Tech Support</span>';
                 
                 const phoneLink = document.createElement('a');
-                phoneLink.href = 'tel:03094649399';
-                phoneLink.className = 'support-phone-mobile';
-                
-                const phoneIcon = document.createElement('i');
-                phoneIcon.className = 'fas fa-phone-alt';
-                
-                const phoneText = document.createElement('span');
-                phoneText.textContent = '03094649399';
-                
-                phoneLink.appendChild(phoneIcon);
-                phoneLink.appendChild(phoneText);
+                phoneLink.href = 'tel:855-730-5677';
+                phoneLink.innerHTML = '<i class="fas fa-phone-alt"></i><span>855-730-5677</span>';
                 
                 const loginLink = document.createElement('a');
                 loginLink.href = 'index.html#signup-form';
@@ -42,12 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 const signupLink = document.createElement('a');
                 signupLink.href = 'index.html#signup-form';
-                signupLink.className = 'signup-link';
                 signupLink.textContent = 'Sign up';
                 
                 // Add items to mobile menu
                 supportMobileMenu.appendChild(homeLink);
-                supportMobileMenu.appendChild(aboutLink);
+                supportMobileMenu.appendChild(techSupportLink);
                 supportMobileMenu.appendChild(phoneLink);
                 supportMobileMenu.appendChild(loginLink);
                 supportMobileMenu.appendChild(signupLink);

@@ -15,51 +15,34 @@ document.addEventListener('DOMContentLoaded', function() {
                 mobileMenu.classList.add('mobile-menu');
                 
                 // Create mobile menu items with the same structure as desktop
-                const homeLink = document.createElement('a');
-                homeLink.href = 'index.html';
-                homeLink.className = 'support-link';
-                homeLink.textContent = 'Home';
-                
                 const phoneLink = document.createElement('a');
-                phoneLink.href = 'tel:03094649399';
+                phoneLink.href = 'tel:855-730-5677';
                 phoneLink.className = 'phone-number';
-                
-                const phoneIcon = document.createElement('i');
-                phoneIcon.className = 'fas fa-phone-alt';
-                
-                const phoneText = document.createElement('span');
-                phoneText.textContent = '03094649399';
-                
-                phoneLink.appendChild(phoneIcon);
-                phoneLink.appendChild(phoneText);
-                
-                const aboutLink = document.createElement('a');
-                aboutLink.href = 'about.html';
-                aboutLink.className = 'support-link';
-                aboutLink.textContent = 'About Us';
-                
-                const supportLink = document.createElement('a');
-                supportLink.href = 'get-support.html';
-                supportLink.className = 'support-link';
-                supportLink.textContent = 'Get support';
+                phoneLink.innerHTML = '<i class="fas fa-phone-alt"></i><span>855-730-5677</span>';
+
+                const techSupportLink = document.createElement('a');
+                techSupportLink.href = 'about.html';
+                techSupportLink.textContent = 'Tech Support';
+
+                const paymentInquiriesLink = document.createElement('a');
+                paymentInquiriesLink.href = 'get-support.html';
+                paymentInquiriesLink.textContent = 'Payment Inquiries';
                 
                 const loginLink = document.createElement('a');
                 loginLink.href = '#hero';
-                loginLink.className = 'login-link';
                 loginLink.textContent = 'Log in';
                 
-                const getStartedBtn = document.createElement('a');
-                getStartedBtn.href = '#hero';
-                getStartedBtn.className = 'get-started-btn';
-                getStartedBtn.textContent = 'Get started';
+                const signupLink = document.createElement('a');
+                signupLink.href = '#hero';
+                signupLink.className = 'get-started-btn';
+                signupLink.textContent = 'Get started';
                 
                 // Add all items to mobile menu
-                mobileMenu.appendChild(homeLink);
                 mobileMenu.appendChild(phoneLink);
-                mobileMenu.appendChild(aboutLink);
-                mobileMenu.appendChild(supportLink);
+                mobileMenu.appendChild(techSupportLink);
+                mobileMenu.appendChild(paymentInquiriesLink);
                 mobileMenu.appendChild(loginLink);
-                mobileMenu.appendChild(getStartedBtn);
+                mobileMenu.appendChild(signupLink);
                 
                 // Insert after header
                 const header = document.querySelector('header');
