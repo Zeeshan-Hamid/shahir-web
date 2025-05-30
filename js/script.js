@@ -323,4 +323,13 @@ function closeModal(modal) {
     setTimeout(() => {
         modal.style.display = 'none';
     }, 300);
-} 
+}
+
+// Initialize modal state
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('thank-you-modal');
+    if (modal) {
+        modal.style.display = 'none';
+        modal.classList.remove('show');
+    }
+}); 

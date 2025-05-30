@@ -1529,7 +1529,6 @@ footer {
     }
 }
 
-<<<<<<< HEAD
 /* Thank You Modal Styles */
 .modal {
     display: none;
@@ -1546,6 +1545,7 @@ footer {
 }
 
 .modal.show {
+    display: block;
     opacity: 1;
     visibility: visible;
 }
@@ -1641,7 +1641,8 @@ footer {
     .modal-body h2 {
         font-size: 20px;
     }
-=======
+}
+
 /* Protected text styles */
 [style*="user-select: none"] {
     display: inline-flex;
@@ -1704,5 +1705,4 @@ footer {
     .protected-word {
         gap: 0.25px;
     }
->>>>>>> 8e82a57 (Final version)
 } 
