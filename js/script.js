@@ -15,6 +15,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 mobileMenu.classList.add('mobile-menu');
                 
                 // Create mobile menu items with the same structure as desktop
+                const homeLink = document.createElement('a');
+                homeLink.href = 'index.html';
+                homeLink.className = 'support-link';
+                homeLink.textContent = 'Home';
+                
                 const phoneLink = document.createElement('a');
                 phoneLink.href = 'tel:03094649399';
                 phoneLink.className = 'phone-number';
@@ -48,7 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 getStartedBtn.className = 'get-started-btn';
                 getStartedBtn.textContent = 'Get started';
                 
-                // Add items to mobile menu
+                // Add all items to mobile menu
+                mobileMenu.appendChild(homeLink);
                 mobileMenu.appendChild(phoneLink);
                 mobileMenu.appendChild(aboutLink);
                 mobileMenu.appendChild(supportLink);

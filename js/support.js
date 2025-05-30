@@ -15,6 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 supportMobileMenu.classList.add('support-mobile-menu');
                 
                 // Create mobile menu items
+                const homeLink = document.createElement('a');
+                homeLink.href = 'index.html';
+                homeLink.textContent = 'Home';
+                
                 const aboutLink = document.createElement('a');
                 aboutLink.href = 'about.html';
                 aboutLink.textContent = 'About Us';
@@ -42,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 signupLink.textContent = 'Sign up';
                 
                 // Add items to mobile menu
+                supportMobileMenu.appendChild(homeLink);
                 supportMobileMenu.appendChild(aboutLink);
                 supportMobileMenu.appendChild(phoneLink);
                 supportMobileMenu.appendChild(loginLink);
